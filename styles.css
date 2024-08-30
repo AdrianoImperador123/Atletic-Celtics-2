@@ -110,8 +110,8 @@ section h2 {
 /* Estilos da seção de imagens */
 .imagens .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
 }
 
 .imagens .image-grid img {
