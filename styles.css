@@ -1,0 +1,182 @@
+/* Reset básico de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #004d00;
+    padding: 20px 0;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('path_to_hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero .hero-content p {
+    font-size: 1.5em;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #004d00;
+}
+
+.sobre p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos da seção de vídeos */
+.videos .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.videos .video-grid iframe {
+    width: 100%;
+    height: 250px;
+}
+
+/* Estilos da seção de imagens */
+.imagens .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.imagens .image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid #333;
+}
+
+/* Seção de patrocinador */
+.patrocinador {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.patrocinador p {
+    font-size: 1.2em;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #004d00;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero .hero-content h2 {
+        font-size: 2.2em;
+    }
+
+    #hero .hero-content p {
+        font-size: 1.2em;
+    }
+}
